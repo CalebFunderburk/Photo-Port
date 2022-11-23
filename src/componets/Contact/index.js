@@ -49,7 +49,7 @@ function ContactFrom() {
 
     return (
         <section>
-            <h1>Contact me</h1>
+            <h1 data-testid='h1' >Contact me</h1>
             <form id='contact-form' onSubmit={handleSubmit} >
                 <div>
                     <label htmlFor="name">Name:</label>
