@@ -11,6 +11,8 @@ const mockSetCurrentCategory = jest.fn()
 const mockContactSelected = jest.fn()
 const mockSetContactSelected = jest.fn()
 
+afterEach(cleanup)
+
 describe('Nav component', () => {
     it('renders', () => {
         render(<Nav
@@ -54,5 +56,3 @@ describe('links are visible', () => {
         expect(getByTestId('about')).toHaveTextContent('About me')
     })
 })
-
-afterEach(cleanup)
